@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Scott Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c09d900160.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/TKSweblogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Artist/Rapper</p>
+                <h1>Hey, I'm <span>ThatKidScott</span>!</h1>
+                <h2>A 22 Year Old Music Artist from Jamaica</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------about------------------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/scottuser3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        ThatKidScott is a Jamaican-born rapper known for his dynamic presence in the music world, 
+                        particularly on platforms like YouTube and Spotify. Drawing inspiration from alt/aesthetic
+                        rappers, rockstars and even emos he blends elements of hip-hop, nerdcore, aesthetic and meme music 
+                        to create a unique and engaging sound. His music often combines punchy, high-energy verses 
+                        with witty references to pop culture, appealing to a wide audience. Whether he's spitting bars 
+                        with aggressive intensity or crafting more laid-back, romantic tracks, his versatility 
+                        as an artist is a hallmark of his style.
+                        <br> <br>
+                        His ability to switch from rapid-fire, S-tier lyrical delivery to smoother, more melodic flows 
+                        sets him apart in the genre. This range allows ThatKidScott to experiment with different 
+                        musical moods and themes, appealing to both hardcore rap fans and those looking for 
+                        something lighter and more melodic. From banger tracks full of clever wordplay to heartfelt songs 
+                        with emotional depth, his music reflects his diverse influences and his passion for creating songs 
+                        that resonate with a wide variety of listeners. With a growing fan base, 
+                        ThatKidScott is quickly becoming a prominent figure in the music scene, known for 
+                        both his technical skill and his creative range.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('credits')">Credits</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Rapping</span><br>Hip/Hop, Nerdcore, Aggressive, Punk-Pop</li>
+                            <li><span>Writing</span><br>Bars, Entendre, Wordplay, Cadence, Flows</li>
+                            <li><span>Mixing</span><br>EQ, Lining, De-Esser, Vocal Tuner, Audio Splicing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Years</span><br>2022 - Current</li>
+                            <li><span>Works</span><br>50+ Features, 5+ Projects</li>
+                            <li><span>Co-signs</span><br>CuttyVibes, StillDyl, JacobJordon, CAZ!, Qrystral<br>wavehi, Immute, r3.halfpace, neveragain, Flint4k</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="credits">
+                        <ul>
+                            <li><span>Software</span><br>Fl Studio, Bandlab</li>
+                            <li><span>Engineering Mentors</span><br>Hemminism, Racx, Bohnfaia</li>
+                            <li><span>Inspiration</span><br>Lil Wayne, Egovert, Tyga, Left Eye, Notion, wavehi, Waren Hue, Jammato</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------services------------------------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Music Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-microphone"></i>
+                    <h2>Features</h2>
+                    <p>
+                        Verses: <br> 8-16 Bars($20US) <br> 16+ Bars($25US) <br> Chorus: ($15US) <br> Opens: ($10US)   
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-headphones"></i>
+                    <h2>Engineering</h2>
+                    <p>
+                        Mixing: <br> Full Song($20US) <br> Verse/Chorus($10US)
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2>Writing</h2>
+                    <p>
+                        Ghost Writing: <br> Full Song w/ Beat($25US) <br>- no Beat($30US) <br> Verse 8-16($10US)
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-chalkboard"></i>
+                    <h2>Mentoring</h2>
+                    <p>
+                        Music Tips: <br> 1 hour Weekdays($20US) <br> 1 hour Weekends($30) 
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------portfolio------------------------------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/newwork-1.png">
+                    <div class="layer">
+                        <h3>Beyblade Nerdcore Song</h3>
+                        <p>aggressively rapped about a beyblade character for a competition</p>
+                        <a href="https://youtu.be/Z_npR7zcl9c?t=108" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/newwork-2.png">
+                    <div class="layer">
+                        <h3>Featured Verse on Song</h3>
+                        <p>did a featured verse for another artist where I dropped 8 bars about the topic</p>
+                        <a href="https://youtu.be/emwvoSLfBvE?t=57" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/newwork-3.png">
+                    <div class="layer">
+                        <h3>Engineered Song</h3>
+                        <p>Mixed and Mastered the vocals on a song to make it whole</p>
+                        <a href="https://youtu.be/jci4dZTCw4A" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/@ThatKidScott" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------contact------------------------------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Info</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> thatkidscottmusic@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> #1-876-212-9777</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-spotify"></i></a>
+                        <a href=""><i class="fa-brands fa-soundcloud"></i></a> -->
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-discord"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © ScottProduction. Made by Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxnAwlovkBtbNnC3pcgyRrF8WxIhI1RDbjUO_mE99rQLkjIlu0Ks73nJmb5IsEw956WZQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
